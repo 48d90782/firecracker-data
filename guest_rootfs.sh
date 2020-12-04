@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rootfs_path=$(pwd)"/rootfs"
+rootfs_path=$(pwd)"/rootfs.ext4"
 curl --unix-socket /tmp/firecracker.socket -i \
   -X PUT 'http://localhost/drives/rootfs' \
   -H 'Accept: application/json'           \
